@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <style>
+    button {
+      margin-top: 10px;
+      display: block;
+    }
+    label {
+      margin-right: 10px;
+    }
+    form div {
+      margin-top: 10px;
+    }
+  </style>
+  <body>
+    <form action="/day-06/links.html" method="get">
+      <div>
+        <label for="username">username</label>
+        <input
+          required
+          type="text"
+          name="username"
+          id="username"
+          autocomplete="username"
+        />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          aria-describedby="password-length"
+          required
+          minlength="10"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="***********"
+          autocomplete="current-password"
+        />
+        <span id="password-length">Password length should be more the 10</span>
+      </div>
+      <div>
+        <label for="language">Preferred language</label>
+        <select name="language" id="language" title="language">
+          <option value="en">EN</option>
+          <option value="ar" selected>AR</option>
+          <option value="fr">FR</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

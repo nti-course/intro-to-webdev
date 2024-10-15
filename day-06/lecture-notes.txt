@@ -1,0 +1,22 @@
+Readings
+---------
+- Opening Links in New Browser Windows and Tabs: https://www.nngroup.com/articles/new-browser-windows-and-tabs/
+- Pseudo classes documentation https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#element_display_state_pseudo-classes 
+- Pseudo elements documentation https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#list_of_pseudo-elements
+- CSS values and units https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
+
+
+Useful tools
+------------
+- CyberChef for encoding and decoding data https://gchq.github.io/CyberChef/#recipe=URL_Encode(false)&input=TlRJIGlzIGdyZWF0ZSwgYnV0IHlvdSBrbm93IHdoYXQsIHlvdSBhcmUgZ3JlYXRlcgo&oeol=FF
+- Cooler for generating color palettes https://coolors.co/palettes/trending
+
+Homework
+--------
+1. Build two breadcrumb navigation bars, one like the MDN (Image 2), and the other like github (Image 3).
+You should be able to add new nested links to the breadcrumb without changing the CSS.
+Please use semantic HTML and load the styles via a link tag.
+hints: you will need the ::before pseudo-element, and the :not pseudo-class to select the last element of the list.
+
+2. sketch (using paper an pencil) the columns and rows of a website of your choice 
+so that you get prepared for the layout section (in the next session).

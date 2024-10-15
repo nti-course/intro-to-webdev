@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* :is(article, aside) p {
+        color: red;
+      } */
+      /* article p,
+      aside p {
+        color: red;
+      } */
+      /* pseudo class starts with : */
+      /* pseudo element starts with :: */
+      article p:first-of-type::first-letter {
+        font-size: xx-large;
+        font-weight: bold;
+      }
+      /*
+      +
+      ~
+      >
+       
+       */
+
+      aside p ~ p {
+        color: green;
+      }
+      a {
+        display: block;
+        padding-top: 2px;
+      }
+      a[download*="b" i] {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <aside>
+        <section>
+          <a href="#" download="dsd.png">dsd.png</a>
+          <a href="#" download="BB.png">BB.png</a>
+          <a href="#" download="ab.svg">ab.svg</a>
+          <a href="#" download="b.gif">b.gif</a>
+          <p>First paragraph aside section</p>
+          <p>Second paragraph aside section</p>
+          <a href="#">link</a>
+          <p>Third paragraph aside section</p>
+        </section>
+      </aside>
+      <article>
+        <section>
+          <p>First article section</p>
+          <p>Second article section</p>
+        </section>
+      </article>
+      <p>Outside</p>
+    </main>
+  </body>
+</html>

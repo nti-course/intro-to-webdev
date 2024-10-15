@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>opening links</title>
+    <style>
+      section > a {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Some commonly used <code>&lta&gt</code> attributes</h1>
+    <section>
+      <h2>Opening links</h2>
+      <a href="https://google.com"
+        >Google (open in the same tab - default behavior)</a
+      >
+      <a href="https://google.com" target="_self"
+        >Google (open in the same tab - with target)</a
+      >
+      <a href="https://google.com" rel="noopener" target="_blank"
+        >Google (open in a new tab)</a
+      >
+      <a href="https://google.com" onclick="openPopup(event)"
+        >Google (open in a popup window)</a
+      >
+      <hr />
+      <p>
+        Please read this article on
+        <a href="https://www.nngroup.com/articles/new-browser-windows-and-tabs/"
+          >opening links in new tabs etiquette</a
+        >
+      </p>
+    </section>
+    <section>
+      <h2>Downloading files</h2>
+      <!--How to encode the file content (until we learn about js) https://gchq.github.io/CyberChef/#recipe=URL_Encode(false)&input=TlRJIGlzIGdyZWF0ZSwgYnV0IHlvdSBrbm93IHdoYXQsIHlvdSBhcmUgZ3JlYXRlcg&oeol=FF -->
+      <a
+        href="data:text/plain;charset=utf-8,NTI%20is%20greate,%20but%20you%20know%20what,%20you%20are%20greater"
+        download="nti.txt"
+        >Download (encoded data)</a
+      >
+      <a href="/day-06/nti_log.png" download="logo.png">Download (from file)</a>
+    </section>
+    <script>
+      function openPopup(event) {
+        event.preventDefault();
+        window.open("https://google.com", "popup", "width=600,height=400");
+      }
+    </script>
+  </body>
+</html>
