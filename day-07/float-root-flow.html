@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 2px solid #3bc9db;
+        border-radius: 5px;
+        background-color: #e3fafc;
+        width: 400px;
+        padding: 5px;
+      }
+
+      .item {
+        height: 100px;
+        width: 100px;
+        background-color: #1098ad;
+        border: 1px solid #0b7285;
+        border-radius: 5px;
+        float: left;
+        /* margin-right: 10px; */
+        margin-inline-end: 10px;
+      }
+
+      .container2 {
+        display: flow-root;
+      }
+
+      .container3 {
+        height: 100px;
+      }
+
+      .container4 {
+        display: flow-root;
+      }
+
+      .container4 .item {
+        float: inline-start;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container container1">
+      <div class="item"></div>
+      Without root-flow
+    </div>
+    <p>
+      Voluptate excepteur dolore eu cupidatat mollit exercitation nostrud
+      occaecat fugiat elit nisi. Eiusmod labore elit laboris reprehenderit qui
+      cupidatat sunt et id Lorem exercitation commodo. Consequat in ex labore
+      nulla occaecat sint ea ullamco cillum. Enim dolor do excepteur Lorem amet.
+      Sit occaecat fugiat cupidatat occaecat ipsum et aliquip ipsum et commodo.
+      Non laborum non cillum dolore amet id tempor sint eiusmod duis in. Velit
+      eiusmod velit dolor officia do sit incididunt laboris anim in magna ad
+      tempor commodo.
+    </p>
+    <div class="container container2">
+      <div class="item"></div>
+      With root-flow
+    </div>
+    <p>
+      Esse dolore nisi enim enim nostrud sit tempor sint culpa. Anim id nisi
+      incididunt elit voluptate fugiat nulla in deserunt amet occaecat. Deserunt
+      magna officia consectetur est voluptate.
+    </p>
+
+    <div class="container container3">
+      <div class="item"></div>
+      Without root-flow but knowing the exact height of the parrent
+    </div>
+    <p></p>
+
+    <div dir="rtl" class="container container4">
+      <div class="item"></div>
+      السلام عليكم
+    </div>
+  </body>
+</html>

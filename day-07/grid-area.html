@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Template Area</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: grid;
+        height: 100vh;
+        width: 100%;
+        grid-template-rows: 30px 20px 1fr;
+        grid-template-columns: auto;
+        grid-template-areas:
+          "header header ."
+          "breadcrumb breadcrumb breadcrumb"
+          "main main main";
+      }
+
+      header {
+        grid-area: header;
+        background-color: #0077b6;
+      }
+
+      .breadcrumb {
+        grid-area: breadcrumb;
+
+        background-color: #00b4d8;
+      }
+
+      main {
+        grid-area: main;
+        background-color: #48cae4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <div class="breadcrumb">Breadcrumb</div>
+      <main>Main</main>
+    </div>
+  </body>
+</html>
