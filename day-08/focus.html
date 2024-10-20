@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="position.css" />
+    <style>
+      aside:focus-within {
+        outline: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>NTI</header>
+    <main>
+      <article>
+        <h1>Focus demo</h1>
+        <section>
+          <h2>Paragraph 1</h2>
+          <p>
+            Sint exercitation minim laboris sunt ut aliqua minim. In irure
+            fugiat tempor
+            <a href="https://google.com">minim sint</a> adipisicing elit
+            pariatur. Exercitation id ea anim amet velit esse.
+
+            <button>Test</button>
+          </p>
+        </section>
+      </article>
+      <aside tabindex="1">
+        <nav>
+          <ul>
+            <li><a tabindex="2" href="#">Paragraph 1</a></li>
+            <li><a tabindex="3" href="#">Paragraph 2</a></li>
+            <li><a tabindex="4" href="#">Paragraph 3</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </main>
+  </body>
+</html>

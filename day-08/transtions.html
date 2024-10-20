@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <style>
+      img {
+        height: 20vh;
+        width: auto;
+        /* transition-property: transform; */
+        /* transition-timing-function: easeInBounce; */
+        /* transition-delay: 0ms; */
+        transition: transform ease-in-out 500ms;
+      }
+
+      img:hover {
+        transform: translateX(100px);
+      }
+
+      p {
+        color: red;
+        font-size: 20px;
+        transition: all ease-in-out 500ms;
+
+        &:hover {
+          transform: translateX(100px);
+          color: green;
+          font-size: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="nti_log.png" alt="" />
+    <p>
+      Eiusmod duis aute labore est. Deserunt dolor ea eu dolore duis in culpa
+      culpa excepteur cupidatat in. Consectetur culpa dolore cillum ex ea tempor
+      ex quis pariatur. Quis tempor anim adipisicing eiusmod veniam culpa
+      deserunt cillum. Elit consequat adipisicing mollit esse commodo anim
+      voluptate fugiat ad mollit sint reprehenderit laboris. Aute do dolor
+      proident incididunt.
+    </p>
+  </body>
+</html>

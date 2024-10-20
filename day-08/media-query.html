@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: red;
+      }
+
+      @media print {
+        * {
+          filter: grayscale();
+          /* display: none; */
+        }
+      }
+
+      @media screen and (orientation: landscape) {
+        .orientation::after {
+          content: "landscape";
+        }
+      }
+      @media screen and (orientation: portrait) {
+        .orientation::after {
+          content: "portrait";
+        }
+      }
+
+      @media screen and (min-width: 400px) {
+        p {
+          color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Id magna ipsum amet dolore est elit mollit proident laborum proident.
+      Lorem elit voluptate amet eu excepteur anim labore laboris in consectetur
+      anim cupidatat. Do Lorem non non aute adipisicing do exercitation laborum
+      mollit duis. Veniam culpa reprehenderit sit Lorem commodo Lorem laboris
+      dolore.
+    </p>
+    <img src="ms.avif" alt="" />
+    <div class="orientation"></div>
+  </body>
+</html>

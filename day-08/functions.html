@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Functions</title>
+    <style>
+      .fake-img {
+        background-image: url("nti_log.png");
+        height: 20rem;
+        background-size: contain;
+        width: auto;
+        background-repeat: no-repeat;
+        margin: 5rem 0;
+      }
+
+      .gradient {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        background: rgb(131, 58, 180);
+        background: linear-gradient(
+          90deg,
+          rgba(131, 58, 180, 1) 0%,
+          rgba(253, 29, 29, 1) 50%,
+          rgba(252, 176, 69, 1) 100%
+        );
+      }
+      a::after {
+        content: " (" attr(data-custom-attr) ")";
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+      }
+
+      img {
+        height: auto;
+        width: 30vw;
+      }
+
+      div img:nth-of-type(1) {
+        transform: rotateX(90deg);
+      }
+      img:nth-of-type(2) {
+        /* mirroring effect */
+        transform: rotateY(180deg);
+      }
+
+      img:nth-last-of-type(3) {
+        transform: rotateZ(-30deg);
+      }
+
+      img:nth-of-type(4) {
+        transform: translateX(200px);
+      }
+
+      img:nth-of-type(5) {
+        transform: translateY(200px);
+      }
+
+      img:nth-of-type(6) {
+        transform: translateZ(100px);
+      }
+
+      img:nth-of-type(7) {
+        transform: scaleX(1.5);
+      }
+
+      img:nth-of-type(8) {
+        transform: scaleY(1.6);
+      }
+
+      img:nth-of-type(9) {
+        transform: skewX(-45deg);
+      }
+
+      img:nth-of-type(10) {
+        transform: translateX() skewY(30deg);
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      A full list of css functions is available at
+      <a
+        data-custom-attr="my custom attribute"
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions"
+        >MDN</a
+      >
+    </p>
+    <div class="gradient"></div>
+    <div class="fake-img"></div>
+    <div>
+      <img src="nti_log.png" alt="1" />
+      <img src="nti_log.png" alt="2" />
+      <img src="nti_log.png" alt="3" />
+      <img src="nti_log.png" alt="4" />
+      <img src="nti_log.png" alt="5" />
+      <img src="nti_log.png" alt="6" />
+      <img src="nti_log.png" alt="7" />
+      <img src="nti_log.png" alt="8" />
+      <img src="nti_log.png" alt="9" />
+      <img src="nti_log.png" alt="10" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filters</title>
+    <style>
+        img:nth-of-type(1) {
+          filter: blur(5px);
+          &:hover {
+            filter: blur(0px);
+          }
+        }
+
+        img:nth-of-type(2) {
+          filter: brightness(100%);
+        }
+
+        img:nth-of-type(3) {
+          filter: contrast(10)
+        }
+
+        img:nth-of-type(4) {
+          filter: grayscale(100%)
+        }
+
+        img:nth-of-type(5) {
+          filter: hue-rotate(90deg);
+        }
+
+        img:nth-of-type(6) {
+          filter: invert()
+        }
+
+        img:nth-of-type(7) {
+          filter: opacity(30%)
+        }
+
+        img:nth-of-type(8) {
+          filter: saturate(2)
+        }
+
+        img:nth-of-type(9) {
+          filter: sepia();
+          filter: sepia(100%);
+        }
+
+        img:nth-of-type(10) {
+          filter: drop-shadow(16px 16px 20px blue);
+        }
+      img
+    </style>
+  </head>
+  <body>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
+      >List of CSS filters</a
+    >
+    <br />
+    <img src="ms.avif" alt="1" />
+    <img src="ms.avif" alt="2" />
+    <img src="ms.avif" alt="3" />
+    <img src="ms.avif" alt="4" />
+    <img src="ms.avif" alt="5" />
+    <img src="ms.avif" alt="6" />
+    <img src="ms.avif" alt="7" />
+    <img src="ms.avif" alt="8" />
+    <img src="ms.avif" alt="9" />
+    <img src="ms.avif" alt="10" />
+  </body>
+</html>
