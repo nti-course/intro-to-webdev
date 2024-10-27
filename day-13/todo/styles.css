@@ -1,0 +1,117 @@
+:root {
+  --color-1: #8ecae6;
+  --color-2: #219ebc;
+  --color-3: #023047;
+  --color-4: #ffb703;
+  --color-5: #fb8500;
+}
+
+* {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  display: flex;
+  height: 100svh;
+  width: 100svw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  gap: 3rem;
+}
+
+label[for="todo-input"] {
+  display: none;
+}
+
+h1 {
+  font-size: 3rem;
+  -webkit-user-select: none;
+  user-select: none;
+  color: var(--color-2);
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+}
+
+form button[type="submit"] {
+  border-radius: 10%;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  background-color: var(--color-3);
+  color: var(--color-4);
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: var(--color-5);
+    color: var(--color-3);
+    cursor: pointer;
+  }
+}
+
+#todo-input {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-3);
+  color: var(--color-4);
+
+  &:focus {
+    outline: 5px solid var(--color-4);
+  }
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: large;
+  align-self: flex-start;
+  justify-self: flex-start;
+  color: var(--color-3);
+}
+
+.todos h2 {
+  font-size: 2rem;
+  color: var(--color-2);
+}
+
+.todos ul {
+  padding: 0;
+}
+
+input[type="checkbox"] {
+  margin-right: 1rem;
+  transform: scale(1.5);
+}
+
+.todos li {
+  list-style-type: none;
+}
+
+.todos li input:checked {
+  text-decoration: line-through;
+  color: var(--color-5);
+}
+
+.todos li {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+input[type="checkbox"]:checked {
+  color: var(--color-5);
+}
