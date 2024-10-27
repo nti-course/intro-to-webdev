@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover</title>
+  </head>
+  <body>
+    <button type="button">hover on me</button>
+    <img src="nti_log.png" alt="nti logo" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        justify-content: center;
+        align-content: center;
+      }
+
+      button {
+        max-width: 100px;
+      }
+
+      img {
+        width: 50svw;
+        height: auto;
+      }
+
+      .zoom {
+        transform: scale(1.2, 1.2);
+      }
+
+      .hovered {
+        color: red;
+        cursor: pointer;
+      }
+      /* button:hover {
+        color: red;
+        cursor: pointer;
+      } */
+    </style>
+    <script src="hover.js"></script>
+  </body>
+</html>

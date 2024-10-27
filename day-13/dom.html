@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="reset.css" />
   </head>
   <body>
-    <h1 id="main-title">CSS Selectors Practice</h1>
+    <h1 id="main-title">DOM selection practice</h1>
     <div class="text">
       <p class="intro">This is a paragraph with a class.</p>
       <p>This is a paragraph without a class.</p>
     </div>
     <div class="container">
-      <ul>
+      <ul id="items">
         <li class="item">Item 1</li>
         <li class="item">Item 2</li>
         <li class="item special">Item 3</li>
@@ -27,11 +27,16 @@
     <label for="checkbox1">Check me</label>
     <button class="btn" type="button">Click me</button>
     <button class="btn special" type="button">Special Button</button>
+    <p>test</p>
     <script src="selection.js" type="text/javascript"></script>
     <style>
       .title {
         color: red;
       }
+      .container ul li:first-of-type {
+        /* color: red; */
+      }
+
       a,
       input,
       button {

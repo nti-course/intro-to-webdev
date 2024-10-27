@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=history"
+    />
+  </head>
+  <body>
+    <button type="button" title="restore all deleted and hidden items">
+      <span class="material-symbols-outlined"> history </span>Restore all
+    </button>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+    </ul>
+
+    <style>
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        cursor: pointer;
+      }
+      .deleted {
+        text-decoration: line-through;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+    <script src="delegation.js"></script>
+  </body>
+</html>
