@@ -1,0 +1,26 @@
+{
+  "name": "day-14",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite --host",
+    "wrangler:login": "wrangler login",
+    "wrangler:deploy": "npx wrangler pages deploy dist",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "glob": "^11.0.0",
+    "sass": "^1.80.4",
+    "vite": "^5.4.10",
+    "wrangler": "^3.83.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "fuse.js": "^7.0.0"
+  }
+}

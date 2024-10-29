@@ -1,0 +1,39 @@
+@use "bootstrap/scss/bootstrap";
+
+.projects {
+  height: 100svb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10vh;
+  font-size: 3rem;
+}
+
+.products-container {
+  margin-top: 5svh;
+}
+img {
+  max-height: 170px;
+  width: auto;
+}
+
+.card .card-text {
+  height: 200px;
+}
+
+.card h5 {
+  text-wrap: nowrap;
+  display: block;
+  overflow: hidden;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
